@@ -46,6 +46,7 @@ Rails.application.routes.draw do
   get 'community_expectations' => 'static_pages#community_expectations'
   get 'before_asking' => 'static_pages#before_asking'
   get 'how_to_ask' => 'static_pages#how_to_ask'
+  post 'import_content' => 'static_pages#import_content'
   get 'sitemap' => 'sitemap#index', defaults: { format: 'xml' }
 
   # failure route if github information returns invalid
